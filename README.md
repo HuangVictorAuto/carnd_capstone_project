@@ -54,7 +54,7 @@ In this project the following packages have been built or modified to navigate t
 
 ##### Traffic Light Detection:
 
-![](imgs\TLD_Node.png)
+![](imgs/TLD_Node.png)
 
 This package contains the traffic light detection node: `tl_detector.py`. This node takes in data from the `/image_color`, `/current_pose`, and `/base_waypoints` topics and publishes the locations to stop for red traffic lights to the `/traffic_waypoint topic`.
 
