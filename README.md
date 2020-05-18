@@ -48,7 +48,7 @@ For this capstone project, we focus on a **PID Controller** to transfer the plan
 
 #### ROS Architecture
 
-The different subsystem are structured as ROS Node. And different systems communicate with each other through publish and subscribe to a specific ROS Topic in the ROS Message form. ![](imgs\ROSNodes_Architecture.png)
+The different subsystem are structured as ROS Node. And different systems communicate with each other through publish and subscribe to a specific ROS Topic in the ROS Message form. ![](imgs/ROSNodes_Architecture.png)
 
 In this project the following packages have been built or modified to navigate the vehicle around the test track.
 
@@ -107,8 +107,6 @@ The simple Classifier I have used is very cost saving and specific for the Simul
 - judge whether the image has red light depending on the found circle from HoughCircle
 
   | ![](imgs/redlight.jpg) | ![](imgs/threshold.jpg) | ![](imgs/detected.jpg) |
-  | ---------------------- | ----------------------- | ---------------------- |
-|                        |                         |                        |
   
   
 
@@ -147,9 +145,6 @@ The simple Classifier will work because it is in the simulator and background ar
   The model was saved as forzen_graph and can be used in anywhere.
 
   | ![](imgs/red.jpg) | ![](imgs/yellow.jpg) | ![](imgs/green.jpg) |
-| ----------------- | -------------------- | ------------------- |
-  |                   |                      |                     |
-
   Finally, I have tested the model in the workspace, but because of latency problem , the model was not tested in the complete loop in the simulator.
   
   ![](imgs/test.gif)
