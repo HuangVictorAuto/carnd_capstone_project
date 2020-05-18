@@ -64,13 +64,13 @@ Built both traffic light detection node and a traffic light classification node.
 
 ##### Waypoint Updater:
 
-![](imgs\WaypointUpdater_Node.png)
+![](imgs/WaypointUpdater_Node.png)
 
 This package contains the waypoint updater node: `waypoint_updater.py`. The purpose of this node is to update the target velocity property of each waypoint based on traffic light and obstacle detection data. This node subscribes to the `/base_waypoints`, `/current_pose`, `/obstacle_waypoint`, and `/traffic_waypoint` topics, and publishes a list of waypoints ahead of the car with target velocities to the `/final_waypoints` topic
 
 ##### DBW Node:
 
-![](imgs\DBW_Node.png)
+![](imgs/DBW_Node.png)
 
 Carla is equipped with a drive-by-wire (dbw) system, meaning the throttle, brake, and steering have electronic control. This package consists of files responsible for control of the vehicle: the node `dbw_node.py` and the file `twist_controller.py`, along with a pid and lowpass filter. The `dbw_node` subscribes to the `/current_velocity` topic along with the `/twist_cmd` topic to receive target linear and angular velocities. Additionally, this node subscribes to `/vehicle/dbw_enabled`, which indicates if the car is under dbw or driver control. This node publishes throttle, brake, and steering commands to the `/vehicle/throttle_cmd`, `/vehicle/brake_cmd`, and `/vehicle/steering_cmd` topics.
 
@@ -106,7 +106,7 @@ The simple Classifier I have used is very cost saving and specific for the Simul
 
 - judge whether the image has red light depending on the found circle from HoughCircle
 
-  | ![](imgs\redlight.jpg) | ![](imgs\threshold.jpg) | ![](imgs\detected.jpg) |
+  | ![](imgs/redlight.jpg) | ![](imgs/threshold.jpg) | ![](imgs/detected.jpg) |
   | ---------------------- | ----------------------- | ---------------------- |
 |                        |                         |                        |
   
@@ -146,13 +146,13 @@ The simple Classifier will work because it is in the simulator and background ar
 
   The model was saved as forzen_graph and can be used in anywhere.
 
-  | ![](imgs\red.jpg) | ![](imgs\yellow.jpg) | ![](imgs\green.jpg) |
+  | ![](imgs/red.jpg) | ![](imgs/yellow.jpg) | ![](imgs/green.jpg) |
 | ----------------- | -------------------- | ------------------- |
   |                   |                      |                     |
 
   Finally, I have tested the model in the workspace, but because of latency problem , the model was not tested in the complete loop in the simulator.
   
-  ![](imgs\test.gif)
+  ![](imgs/test.gif)
 
 
 
