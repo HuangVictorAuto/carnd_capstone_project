@@ -147,6 +147,8 @@ The simple Classifier will work because it is in the simulator and background ar
   The model was saved as forzen_graph and can be used in anywhere.
 
   | ![](imgs/red.jpg) | ![](imgs/yellow.jpg) | ![](imgs/green.jpg) |
+  | ------------- |:-------------:| -----:|
+  
   Finally, I have tested the model in the workspace, but because of latency problem , the model was not tested in the complete loop in the simulator.
   
   ![](imgs/test.gif)
