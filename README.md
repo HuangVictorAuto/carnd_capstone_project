@@ -106,7 +106,9 @@ The simple Classifier I have used is very cost saving and specific for the Simul
 
 - judge whether the image has red light depending on the found circle from HoughCircle
 
-  | ![](imgs/redlight.jpg) | ![](imgs/threshold.jpg) | ![](imgs/detected.jpg) |
+| ![](imgs/redlight.jpg)| ![](imgs/threshold.jpg)| ![](imgs/detected.jpg)|
+| ------------- |:-------------:| -----:|
+
   
   
 
